@@ -75,7 +75,7 @@ namespace ServerLibrary.Repositories.Implementations;
 
 
         var getRoleName=await FindRoleName(getUserRole.RoleId);
-        if (getRoleName is null) return new LoginResponse(false, "user role not found");
+        if (getUserRole is null) return new LoginResponse(false, "user role not found");
 
         // Assuming GenerateToken and GenerateRefreshToken methods are implemented elsewhere
         string jwtToken = GenerateToken(applicationUser, getRoleName!.Name!);
@@ -118,7 +118,7 @@ namespace ServerLibrary.Repositories.Implementations;
             issuer: config.Value.Issuer,
             audience: config.Value.Audience,
             claims: userClaims,
-            expires: DateTime.Now.AddDays(1), // Token expiration
+            expires: DateTime.Now.AddSeconds(2), // Token expiration
             signingCredentials: credentials
         );
 
