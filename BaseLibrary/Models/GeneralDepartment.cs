@@ -8,5 +8,7 @@ namespace BaseLibrary.Models
 {
     public class GeneralDepartment : BaseModel
     {
+        //One to many relationship with Department
+        public List<Department>? Departments { get; set; }
     }
 }
