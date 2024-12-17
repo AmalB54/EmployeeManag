@@ -16,8 +16,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "Éléments de solution", "{1BD9B0AF-A150-40D0-80ED-A65E92666975}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\..\Downloads\55853.jpg = ..\..\..\..\Downloads\55853.jpg
-		..\..\..\..\Downloads\Wavy_Bus-04_Single-01.jpg = ..\..\..\..\Downloads\Wavy_Bus-04_Single-01.jpg
 		..\..\..\..\Downloads\Profile.jpg = ..\..\..\..\Downloads\Profile.jpg
+		..\..\..\..\Downloads\Wavy_Bus-04_Single-01.jpg = ..\..\..\..\Downloads\Wavy_Bus-04_Single-01.jpg
 	EndProjectSection
 EndProject
 Global
