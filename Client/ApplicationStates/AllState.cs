@@ -37,7 +37,7 @@
         public void CountryClicked()
         {
             ResetAllDepartments();
-            ShowBranch = true;
+            ShowCountry = true;
             Action?.Invoke();
         }
         //City
@@ -61,14 +61,14 @@
         //User
         public bool ShowUser { get; set; }
 
-        public void UsertClicked()
+        public void UserClicked()
         {
             ResetAllDepartments();
             ShowUser = true;
             Action?.Invoke();
         }
         //Employee
-        public bool ShowEmployee { get; set; }
+        public bool ShowEmployee { get; set; } = true;
 
         public void EmployeeClicked()
         {

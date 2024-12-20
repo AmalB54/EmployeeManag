@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace BaseLibrary.Models
@@ -12,6 +13,7 @@ namespace BaseLibrary.Models
         public Department? Department { get; set; }
         public int DepartmentId { get; set; }
         //Relationship : One to Many Employee
+        [JsonIgnore]
         public List<Employee>? Employees { get; set; }
     }
 }

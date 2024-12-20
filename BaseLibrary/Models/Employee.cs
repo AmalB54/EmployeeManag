@@ -14,8 +14,6 @@ namespace BaseLibrary.Models
         [Required]
         public string? FileNumber { get; set; }=string.Empty;
         [Required]
-        public string? Fullname { get; set; }=String.Empty;
-        [Required]
         public string? JobName { get; set; }=string.Empty ;
         [Required]
         public string? Address { get; set; }=string.Empty;
