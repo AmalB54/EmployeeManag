@@ -22,10 +22,17 @@
 @using ServerLibrary.Repositories.Contracts
 @using Syncfusion.Blazor.Popups
 @using Syncfusion.Blazor.DropDowns
+@using Syncfusion.Blazor.Grids
+
 
 
 @using Client.Pages.ContentPages.DepartmentPages
 @using Client.Pages.OtherPages
+@using Client.Pages.ContentPages.LocationPages
+@using Client.Pages.UserPages
+@using Client.Pages.ContentPages.EmployeePages
+@using Client.Pages.OtherPages.DoctorPages
+
 
 @*/Authentication*@
 @inject IUserAccountService accountService
@@ -42,9 +49,12 @@
 @inject IGenericServiceInterface<Branch> branchService
 
 @*/Country / City / Town *@
-@inject IGenericServiceInterface<Country> countrytService
+@inject IGenericServiceInterface<Country> countryService
 @inject IGenericServiceInterface<City> cityService
 @inject IGenericServiceInterface<Town> townService
 
 @*//Employee *@
 @inject IGenericServiceInterface<Employee> employeeService
+
+@inject IGenericServiceInterface<Doctor> doctorService
+

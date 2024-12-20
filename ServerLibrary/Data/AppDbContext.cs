@@ -28,7 +28,7 @@ namespace ServerLibrary.Data
 
         //Other / Vacation / Sanction / Doctor / Overtime
         public DbSet<Vacation> Vacations { get; set; }
-        public DbSet<VacationType> VacationsTypes { get; set; }
+        public DbSet<VacationType> VacationTypes { get; set; }
 
         public DbSet<Overtime> Overtimes { get; set; }
         public DbSet<OvertimeType> OvertimeTypes { get; set; }

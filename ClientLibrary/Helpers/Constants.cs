@@ -11,5 +11,7 @@ namespace ClientLibrary.Helpers
         public const string CityBaseUrl = "api/city"; 
         public const string TownBaseUrl = "api/town";
         public const string EmployeeBaseUrl = "api/employee";
+        public const string DoctorBaseUrl = "api/doctor";
+
     }
 }
